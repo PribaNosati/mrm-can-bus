@@ -76,7 +76,7 @@ CANBusMessage* Mrm_can_bus::messageReceive() {
 		break;
 	default:
 		strcpy(errorMessage, "Error receiving");
-		return false;
+		return NULL;
 	}
 
 	if (found) {
